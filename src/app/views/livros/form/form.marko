@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <h1>Cadastro de Livros</h1>
+        <form action="/livros" method="post">
+
+            <div if(data.livro.id)>
+                <input type="hidden" name="_method" value="PUT">
+                <input type="hidden" id="id" name="id" value="${data.livro.id}"/>
+            </div>
+
+            <div>
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo" value="${data.livro.titulo}" placeholder="digite o nome" />
+            </div>
+            <div>
+                <label for="preco">Preço:</label>
+                <input type="text" id="preco" name="preco" value="${data.livro.preco}" placeholder="150.23" />
+            </div>
+            <div>
+                <label for="descricao">Descrição:</label>
+                <textarea cols="20" rows="10" id="descricao" name="descricao" placeholder="digite a descriçao">${data.livro.descricao}</textarea>
+            </div>
+
+            <input type="submit" value="Salvar" />
+        </form>
+    </body>
+</html>    

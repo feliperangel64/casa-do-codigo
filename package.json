@@ -1,0 +1,20 @@
+{
+  "name": "casadocodigo",
+  "version": "1.0.0",
+  "description": "Curso Node.js Parte 1: Inovando com JavaScript no backend",
+  "author": "felipe.rangel@opinionbox.com",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js --ignore *.marko.js"
+  },
+  "dependencies": {
+    "body-parser": "1.18.3",
+    "express": "^4.16.1",
+    "marko": "4.13.4-1",
+    "method-override": "3.0.0",
+    "sqlite3": "4.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.4"
+  }
+}
